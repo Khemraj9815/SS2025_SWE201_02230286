@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { View, Button, StyleSheet, TouchableOpacity, Text } from 'react-native'
 import EmailPasswordLogin from './email'
 import MagicLinkLogin from '../components/magiclink'
-// import PhoneLogin from './PhoneLogin'
+import PhoneLogin from '../components/phonesms'
 // import SocialLogin from './SocialLogin'
 
 export default function AuthOption() {
@@ -12,7 +12,7 @@ export default function AuthOption() {
       throw new Error('Function not implemented.')
   } } />
   if (method === 'magic') return <MagicLinkLogin />
-  // if (method === 'phone') return <PhoneLogin />
+  if (method === 'phone') return <PhoneLogin />
   // if (method === 'social') return <SocialLogin />
 
   return (
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
+    marginTop: 90,
 
   },
   title: {
