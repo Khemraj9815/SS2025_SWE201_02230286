@@ -49,8 +49,6 @@ export default function EmailPasswordLogin({  }: Props) {
     setLoading(false)
   }
 
-  
-
   return (
     <View style={styles.container}>
       {/* <TouchableOpacity onPress={() => setMethod('authoption')}>
